@@ -50,5 +50,11 @@ module Hydra
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Generators
+    config.generators do |g|
+      g.orm             :mongoid
+    end
+
   end
 end
