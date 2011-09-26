@@ -7,7 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <!-- Device flash messages -->
+  <div id="flash">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  </div>
 <%= yield %>
 
 </body>
