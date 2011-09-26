@@ -5,7 +5,12 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-
+# Database system
+group :db do
+  gem 'mongo', "~> 1.3.1"
+  gem 'mongoid', "~> 2.2"
+  gem 'bson_ext', "~> 1.3.1"
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -16,6 +21,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+# for Windows and Ruby 1.9.2 on Rails 3.1.0 use 'gem install eventmachine --pre'
+gem 'thin'
 
 # Use unicorn as the web server
 # gem 'unicorn'
