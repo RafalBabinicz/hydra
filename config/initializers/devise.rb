@@ -198,6 +198,12 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
+  # Key and secret for hydraTesting
+  config.omniauth :twitter, "ILVrINvwM0PnPFmN66WR5g", "v99yX0atURvWiqlDQBP6UpNmPUMxs5rzfBQirvB2I",
+    :scope => 'user'
+  # Key and secret for hydraTesting
+  config.omniauth :facebook, "180004778744028", "4ec83850f7a0b86ffd086db1bd5093b7",
+    :scope => 'user'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

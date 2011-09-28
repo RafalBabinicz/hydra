@@ -12,6 +12,10 @@
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
   </div>
+  <div id="fb"><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+   </div>
+  <div id="twitter"><%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter) %>
+   </div>   
 <%= yield %>
 
 </body>
