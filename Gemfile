@@ -14,6 +14,7 @@ gem 'bson_ext', "~> 1.3.1"
 # Authentication
 gem 'devise'
 gem "oa-oauth", :require => "omniauth/oauth"
+gem 'oa-openid', :require => 'omniauth/openid'
 
 # Gems used only for assets and not required
 # in production environments by default.
